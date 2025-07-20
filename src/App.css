@@ -1,0 +1,79 @@
+.app-container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  width: 250px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .toolbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.tool-button {
+  min-width: 100px;
+  padding: 8px 12px;
+
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tool-button.active {
+  color: white;
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+input[type="color"],
+select,
+input[type="range"] {
+  min-height: 36px;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .tool-button {
+    min-height: 44px;
+    font-size: 16px;
+  }
+}
