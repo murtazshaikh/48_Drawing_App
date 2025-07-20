@@ -31,7 +31,7 @@ An interactive drawing application built with **React**, **TypeScript**, and **K
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/your-username/48_Drawing_App.git
+   git clone https://github.com/murtazshaikh/48_Drawing_App.git
    cd 48_Drawing_App
    ```
 
@@ -77,7 +77,5 @@ The app saves drawing data as a JSON array of shapes. This can be extended later
 The layout is responsive and works on mobile browsers too. 🧑‍🎨📱
 
 ---
-
-## 👤 Author
 
 Made with ❤️
